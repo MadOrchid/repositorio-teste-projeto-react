@@ -1,11 +1,25 @@
 import React from "react";
+import Dados from "./Dados";
 
 export default function Corpo() {
+    //const git='MadOrhcid';
+    const git = () => {
+        return 'MadOrchid'
+    }
+    const linke="Leonardo Begossi"
+    const insta ='Leonardo Begnossi'
+    const som = (n1, n2) => {
+        return n1+n2
+    }
     return(
-        <section>
-            <h2>texto testanto componentes react</h2>
-            <p>Exportando componemtes</p>
-            <p>De uma pasta para outra</p>
-        </section>
+    <section>
+        Deixa o Like 
+    <Dados
+    gitHub={git}
+    linkedin={linke}
+    instagram={insta}
+    somar={som}
+    />
+    </section>
     )
 }
