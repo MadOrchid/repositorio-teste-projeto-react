@@ -1,15 +1,22 @@
 import React from "react";
+import Header from "./componentes/imgs/Header";
+import Corpo from "./componentes/Corpo";
+import Dados from "./componentes/Dados";
 
 export default function App() {
-  const envia = "segundo333";
-  const codigo = () => {
-    return ('primero001')
-  }
-  return (
+
+  const git='MadOrhcid';
+  const linke="Leonardo Begossi"
+  const insta ='Leonardo Begnossi'
+
+return (
     <div>
-      <h1>{codigo()} Texto supremo  {codigo()}</h1>
-      <p>{envia}{codigo()} Texto</p>
-      <p>Texto2</p>
+      <Header />
+      <Corpo />
+      <Dados
+      gitHub={git}
+      linkedin={linke}
+      instagram={insta} />
     </div>
   )
 }
